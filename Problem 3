@@ -1,0 +1,45 @@
+#include <iostream>
+#include <string>
+#include <iomanip>
+
+
+using namespace std;
+
+int main() 
+{
+   int i, j, k, n;
+   
+    cout << "How many Characters Would You Like ? \n";
+    cin >> n;
+    
+    cout << "Your Array Size : " << n ;
+    
+    char txt[n];
+    
+    cout << "\n" << "Type Anything : "; 
+    for(int i = 0; i < n; i++) 
+	{
+        cin >> txt[i];
+    }
+    
+
+     for (i = 0; i < n; i++)
+	{
+	    for (j = i + 1; j < n; j++)
+	    {
+	        if (txt[i] > txt[j])
+	        {
+	            k = txt[i];
+	            txt[i] = txt[j];
+	            txt[j] = k;
+	        }
+	    }
+	}
+	cout << "Your Characters Backwards Look Like : \n"; 
+	for (i=0; i<n; i++)
+	{
+	    cout << txt[i];
+	}
+
+    return 0;
+}
