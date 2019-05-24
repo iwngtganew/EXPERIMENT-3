@@ -44,7 +44,7 @@ int main()
 	
   cout << "\n";
   cout << "The Smallest Integer is : " << arr[1] << "\n" << "\n";
-  cout << "The Largest Integer is : " << arr[10] << "\n" << "\n";
+  cout << "The Largest Integer is : " << k << "\n" << "\n";
 	cout << "The Average of Your Integers is : " << ave;
 	
 	
